@@ -31,10 +31,3 @@ inline Product *RegA() {
 REGISTER_PRODUCT_ADV(ProductA, RegA());
 REGISTER_PRODUCT(ProductB);
 REGISTER_PRODUCT(ProductC);
-// RegisterProduct _pb = RegisterProduct(VirtualTag<ProductB>(), "ProductB");
-// RegisterProduct _pc = RegisterProduct(VirtualTag<ProductC>(), "ProductC");
-
-// RegisterProduct _pa("ProductA", RegA());
-// RegisterProduct _pa = RegisterProduct<ProductA>("ProductB");
-// RegisterProduct _pb = RegisterProduct<ProductB>("ProductB");
-// RegisterProduct _pc = RegisterProduct<ProductC>("ProductC");

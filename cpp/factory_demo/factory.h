@@ -73,4 +73,3 @@ class RegisterProduct {
 
 #define REGISTER_PRODUCT(CLS_NAME) \
     RegisterProduct _##CLS_NAME(VirtualTag<CLS_NAME>(), #CLS_NAME);
-// inline void REGISTER_PRODUCT(CLS_NAME)RegisterProduct##<##CLS_NAME> _##CLS_NAME(#CLS_NAME);
