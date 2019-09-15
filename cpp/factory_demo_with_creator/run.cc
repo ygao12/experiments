@@ -4,9 +4,9 @@
 using namespace std;
 
 int main() {
-  Product *a = GET_CREATOR("ProductA")("ProductA", 100);
-  Product *b = GET_CREATOR("ProductB")("ProductB", 200);
-  Product *c = GET_CREATOR("ProductC")("ProductC", 300);
+  Product *a = GET_CREATOR("ProductA")("Apple", 100);
+  Product *b = GET_CREATOR("ProductB")("Banana", 200);
+  Product *c = GET_CREATOR("ProductC")("Cabbage", 300);
 
   a->Sale();
   b->Sale();
