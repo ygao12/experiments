@@ -20,14 +20,16 @@ class Factory {
  public:
   bool AddIns(const std::string &product_name, const CFunc &cfunc);
   CFunc GetIns(const std::string &product_name);
-  inline void ShowIns() {
-    std::string all_ins = "\n++++++++++\n";
+  inline std::string ShowIns() {
+    std::string all_ins = "++++++++++\n";
     for (auto itd : all_products_) {
-      all_ins.append("I have product " + itd.first);
+      all_ins.append("I have product " + itd.first + "\n");
     }
     if (all_products_.empty()) {
-      all_ins.append("I have no product");
+      all_ins.append("I have no product\n");
     }
+    all_ins += "++++++++++";
+    return all_ins;
   }
   inline bool IsIns(const std::string &product_name) {
     return (all_products_.find(product_name) != all_products_.end());
